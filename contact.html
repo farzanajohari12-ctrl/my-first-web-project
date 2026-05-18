@@ -28,16 +28,22 @@
     <form action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="2a7cfce6-82c2-49ee-a522-ce2a0f131829">
 
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" placeholder="Your Name" required>
+        <input type="text" name="first_name" placeholder="First Name" required>
+        <input type="text" name="last_name" placeholder="Last Name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" placeholder="Your Email" required>
+        <input type="email" name="email" placeholder="Email Address" required>
 
-        <label for="message">Message:</label>
-        <textarea name="message" id="message" rows="5" placeholder="Type your message here..." required></textarea>
+        <input type="tel" name="phone_number" placeholder="Phone Number">
 
-        <button type="submit">Submit Form</button>
+        <input type="text" name="company_name" placeholder="Company Name">
+
+        <input type="text" name="subject" placeholder="Your Subject" required>
+
+        <textarea name="message" placeholder="Write Your Message" rows="5" required></textarea>
+
+        <div class="g-recaptcha" data-sitekey="6LeMSnksAAAAAGuHZ-Tx7dbKsxTXOZXzjgFU2i57"></div>
+
+        <button type="submit">Send a Message</button>
     </form>
 
 </body>
